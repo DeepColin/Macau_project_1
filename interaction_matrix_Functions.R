@@ -7,7 +7,6 @@ DRUG_ANALYSIS_SET_update <- read.xlsx(paste0(path,"/SANGER_DATA/Screened_Compoun
 `%not in%` <- function (x, table) is.na(match(x, table, nomatch=NA_integer_))
 
 IC50 <- t(v17a_IC50s); IC50 <- convert_drugID(IC50)
-v21.meta.per_compound <- read.delim(paste0(path,"/CTD2/Basal_Gene_Expression_and_Copy_Number_Correlation_analysis/CTRPv2.1_2016_pub_NatChemBiol_12_109/v21.meta.per_compound.txt"))
 
 print_target_GDSC <- function(protein_target, target_matrix, drug_names , prediction=F) {
   target_number  <- which(colnames(target_matrix)==protein_target)
