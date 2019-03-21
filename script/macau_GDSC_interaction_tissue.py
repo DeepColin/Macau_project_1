@@ -115,7 +115,7 @@ for i in range( 0 , len(prefixed) ):      ## len(prefixed)
 
 all_runs = [filename for filename in os.listdir(result_folder_origin) if filename.startswith("run_")]
 
-if len(all_runs) >= 20:      
+if len(all_runs) >= 20:  # if you are using this to compute functional similarity between 2 protein targets, consider usign more than 40 runs   
     for i in range( 0 , len(prefixed) ): 
     
         os.chdir(result_folder_origin)
